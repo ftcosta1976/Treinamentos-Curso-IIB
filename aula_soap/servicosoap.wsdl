@@ -18,7 +18,6 @@
 			xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
 			<xsd:include schemaLocation="servicosoap_InlineSchema1.xsd" />
 		</xsd:schema>
-
 		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 			<xsd:import namespace="http://middleware4you.com.br/entidades/Pessoa/v1"
 				schemaLocation="Pessoa_v1.xsd">
@@ -39,6 +38,7 @@
 	</wsdl:message>
 
 	<wsdl:portType name="servicosoap">
+
 		<wsdl:operation name="EnviaPessoaFisicaOperation">
 			<wsdl:input message="tns:EnviaPessoaFisicaOperationRequest" />
 		</wsdl:operation>
@@ -72,6 +72,7 @@
 			<wsdl:output>
 				<soap:body use="literal" />
 			</wsdl:output>
+
 		</wsdl:operation>
 
 
@@ -82,5 +83,4 @@
 			<soap:address location="http://www.example.org/" />
 		</wsdl:port>
 	</wsdl:service>
-
 </wsdl:definitions>

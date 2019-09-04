@@ -1,4 +1,3 @@
-DECLARE ns NAMESPACE 'http://middleware4you.com.br/entidades/Pessoa/v1';
 
 
 CREATE COMPUTE MODULE ConsultaPessoa_sub_Compute
@@ -6,8 +5,7 @@ CREATE COMPUTE MODULE ConsultaPessoa_sub_Compute
 	BEGIN
 		-- CALL CopyMessageHeaders();
 		-- CALL CopyEntireMessage();
-		
-		Set OutputRoot.XMLNSC.ns:ConsultaPessoaResposta.ns:pessoa.ns:nome = 'Fabio Costa2';
+		SET OutputRoot.XMLNSC.ns:ConsultaPessoaResposta.ns:pessoa.ns:nome = 'Fabio Costa';		
 		RETURN TRUE;
 	END;
 

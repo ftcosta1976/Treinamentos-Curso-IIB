@@ -1,9 +1,9 @@
 
 
-Importing file: C:\Users\fcosta\Downloads\Curso IIB\artefatos\servicosoap.wsdl
+Importing file: C:\Users\user\OneDrive\Meus Documentos\Fabio\Treinamentos\Curso IIB\Fontes\Aula01_SOAP\artefatos\servicosoap.wsdl
 
 The WSDL import will proceed with bindings servicosoapSOAP.
-Creating wsdl schema document for file:///C:/Users/fcosta/Downloads/Curso IIB/artefatos/servicosoap.wsdl.
+Creating wsdl schema document for file:///C:/Users/user/OneDrive/Meus Documentos/Fabio/Treinamentos/Curso IIB/Fontes/Aula01_SOAP/artefatos/servicosoap.wsdl.
 Parsing wsdl binding {http://www.middleware4you.com/servicosoap/}servicosoapSOAP.
 Parsing wsdl binding input NewOperation.
 Parsing wsdl binding output NewOperation.
@@ -13,7 +13,7 @@ Creating file servicosoap.xsd in the workspace.
 Creating file servicosoap_InlineSchema1.xsd in the workspace.
 Copying source WSDL servicosoap.wsdl to servicosoap.wsdl.
 
-Elapsed time processing this message definition file: 0.411 seconds
+Elapsed time processing this message definition file: 0.98 seconds
 Number of warnings for this message definition file: 0
 
 

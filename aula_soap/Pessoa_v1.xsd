@@ -44,7 +44,7 @@
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
-	
+
 	<xsd:simpleType name="TipoContatoPessoa">
 		<xsd:annotation>
 			<xsd:documentation>Representa uma forma de contato com a pessoa.
