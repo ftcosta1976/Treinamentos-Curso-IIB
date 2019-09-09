@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
     <input path="/Pessoa_v1.xsd" var="var"/>
-    <input path="jar:file://!com/ibm/msl/mapping/rdb/xsds/dbreturn.xsd" var="var1"/>
-    <output path="db:table(/xe.dbm,xe,msl:db-name('C##FCOSTA'),PESSOA)" var="PESSOA"/>
+    <input path="jar:file://!com/ibm/msl/mapping/rdb/xsds/dbreturn.xsd" var="var2"/>
+    <output path="db:table(/xe.dbm,xe,FCOSTA,PESSOA)" var="PESSOA1"/>
     <namespaces>
         <namespace kind="supplement" prefix="in2" uri="http://middleware4you.com.br/entidades/Endereco/v1"/>
         <namespace kind="supplement" prefix="in" uri="http://middleware4you.com.br/entidades/Pessoa/v1"/>
@@ -9,11 +9,11 @@
     <generation engine="xquery"/>
     <mappingDeclaration name="pessoa_insert_db_flow_insert_map_pessoa_db">
         <input namespace="http://middleware4you.com.br/entidades/Pessoa/v1" path="$var/mb:msg(EnviaPessoaFisicaRequisicao,assembly,XMLNSC,Properties)"/>
-        <output path="$PESSOA/db:insert(fn:true(),NOME,SOBRENOME,ESTADOCIVIL,SEXO,EMAIL)" var="dbinsert"/>
+        <output path="$PESSOA1/db:insert(fn:true(),NOME,SOBRENOME,ESTADOCIVIL,SEXO,EMAIL)" var="dbinsert1"/>
         <transaction>
-            <insert ref="dbinsert">
+            <insert ref="dbinsert1">
                 <input path="EnviaPessoaFisicaRequisicao"/>
-                <output path="$dbinsert/."/>
+                <output path="$dbinsert1/."/>
                 <move>
                     <input path="pessoa/nome"/>
                     <output path="NOME"/>
@@ -36,7 +36,7 @@
                 </move>
             </insert>
             <return>
-                <input path="$var1/DBInsertReturn"/>
+                <input path="$var2/DBInsertReturn"/>
             </return>
         </transaction>
     </mappingDeclaration>

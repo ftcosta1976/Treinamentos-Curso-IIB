@@ -9,7 +9,7 @@
       <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="93,74" queueName="aula.soap.in" messageDomainProperty="XMLNSC">
         <translation xmi:type="utility:ConstantString" string="pega_msg_fila"/>
       </nodes>
-      <nodes xmi:type="ComIbmMSLMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="334,87" mappingExpression="msl://{default}#pessoa_insert_db_flow_insert_map_pessoa_db">
+      <nodes xmi:type="ComIbmMSLMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="259,73" mappingExpression="msl://{default}#pessoa_insert_db_flow_insert_map_pessoa_db">
         <translation xmi:type="utility:ConstantString" string="insert_map_pessoa_db"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
